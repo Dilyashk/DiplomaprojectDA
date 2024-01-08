@@ -16,6 +16,7 @@
 	}
 	body{
 		background: #2C2F3E;
+		list-style-type: none;
 	}
 	.navbar{
 		display: flex;
