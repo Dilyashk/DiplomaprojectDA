@@ -142,7 +142,12 @@ input:checked + label + .slide {
   transform: translateX(0);
   opacity: 1;
 }
-
+.menu-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  background-color: #161e3f;
+  border-radius: 50%;
+}
 
 .bg1{
   background-image: url(https://images.unsplash.com/photo-1422806310414-91469fe4977e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=114e7a73b2385128045a5555b981e939);
