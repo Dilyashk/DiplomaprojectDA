@@ -45,3 +45,12 @@ function resetAllMenus() {
       "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
   }, 300);
 }
+
+
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
