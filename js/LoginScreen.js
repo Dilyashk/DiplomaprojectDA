@@ -32,15 +32,6 @@ const LoginScreen = () => {
 
       await auth.createUserWithEmailAndPassword(email, password);
       console.log('Registration successful');
-//del
-        await auth.createUserWithEmailAndPassword(email, password);
-      console.log('Registration successful');
-
-      navigation.navigate('WelcomeScreen'); // Use navigation prop to navigate
-    } catch (error) {
-      console.error('Registration failed:', error.message);
-    }
-  };
 
   return (
     <View style={styles.container}>
