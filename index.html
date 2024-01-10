@@ -1,108 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet"> <! -- add font  -->
-
-  <link rel="stylesheet" href="css/normalize.css"><! -- hover navigathion  -->
-  <link rel="stylesheet" href="css/main.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
-<style type="text/css">
-	h1{
-		color: #FFFFFF;
-		font-size: 110px;
-		font-family:'SF Pro Display', sans-serif;
-		font-weight: 200;
-		text-transform: uppercase;
-		line-height: normal;
-		align-content: center;
-		text-align-last: center;
-	}
-	body{
-		background: #2C2F3E;
-	}
-	.navbar{
-		display: flex;
-		list-style-type: none;
-		align-items: center;
-		font-size: 22px;
-		font-style: normal;
-		font-weight: 500;
-		letter-spacing: 1.1px;
-		text-align: center;
-		line-height: 95%;
-	}
-	.navbar a{
-		color:  #FFFFFF;
-		opacity: 50%;
-		font-size: 1.1rem;
-		font-weight: 500;
-		padding: 5px 0;
-		margin: 0px 30px;
-		transition: all .50s ease;
-		font-family:'SF Pro Display', sans-serif;
-		font-weight: 200;
-		text-decoration: none;
-	}
-	.navbar a:hover{
-		color: #FFFFFF;
-		opacity: 100%;
-		
-	}
-	p{
-		color: #FFF;
-    text-align: center;
-    font-family: 'SF Pro Display', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 95%;
-    letter-spacing: 1.2px;
-	}
 
-</style>
 <body>
-	<nav>
-		<ul class="navbar">
-			<li><a href="#" class="active">Home</a></li>
-			<li><a href="#">About US</a></li>
-			<li><a href="#">Our Application</a></li>
-			<li><a href="#">Contact US</a></li>
-		</ul>
-	</nav>
-<h1>Apple of my eye</h1>
-<p>visual assistance. WE connects people needing sighted support with volunteers and companies through live video around the world.</p>
-<p></p>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
-
-<! -- otir 15.11 -->
-
-<input type="radio" id="trigger1" name="slider">
-<label for="trigger1"><span class="sr-only">Slide 1 of 5. A photo of a mountain pass with a winding path along the river and a view of distant mountains hiding in the mist.</span></label>
-<div class="slide bg1"></div>
-
-<input type="radio" id="trigger2" name="slider" checked autofocus>
-<label for="trigger2"><span class="sr-only">Slide 2 of 5. A photo of a bird eating sunflower seeds from an open hand.</span></label>
-<div class="slide bg2"></div>
-
-
-<input type="radio" id="trigger3" name="slider">
-<label for="trigger3"><span class="sr-only">Slide 3 of 5. A photo of a concrete bridge over the river with high voltage power lines on both banks.</span></label>
-<div class="slide bg3"></div>
-
-<input type="radio" id="trigger4" name="slider">
-<label for="trigger4"><span class="sr-only">Slide 4 of 5. A photo of a lake surrounded by the forest with mountains in the background.</span></label>
-<div class="slide bg4"></div>
-
-<input type="radio" id="trigger5" name="slider">
-<label for="trigger5"><span class="sr-only">Slide 5 of 5. A photo of a forest.</span></label>
-<div class="slide bg5"></div>
-
-<! -- otir 15.11  -->
-
-
 
 </html>
