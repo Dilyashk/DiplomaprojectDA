@@ -19,6 +19,10 @@ if (!firebaseConfig) {
 // Initialize Firebase app
 const firebaseApp = initializeApp(firebaseConfig);
 
+//del
+// Initialize Firebase app
+const firebaseApp = initializeApp(firebaseConfig);
+
 // Use AsyncStorage for persistence
 const auth = getAuth(firebaseApp);
 
