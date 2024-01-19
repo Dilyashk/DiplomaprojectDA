@@ -208,21 +208,6 @@ input:checked + label + .slide {
 
 
 
-.slide {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transform: translateX(-100%);
-  transition-duration: .4s;
-  opacity: 1;
-}
-
 
 
 
