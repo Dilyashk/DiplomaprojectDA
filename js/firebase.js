@@ -25,7 +25,5 @@ const auth = getAuth(firebaseApp);
 
 const dan = getDan(firebaseApp);
 
-//
-const dan = getDan(firebaseApp);
 
 export { auth };
