@@ -176,7 +176,16 @@ body{
 .container.active .toggle{
     transform: translateX(50%);
 }
-
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
 .toggle-panel{
     position: absolute;
     width: 50%;
