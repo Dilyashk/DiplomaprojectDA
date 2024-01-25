@@ -77,15 +77,3 @@ function resetAllMenus() {
         showcase.classList.toggle('active');
       })
 
-function prevMenu(e) {
-  menuIndex = eval(event.target.parentNode.id.slice(-1));
-  document.querySelectorAll(".multiSelect")[menuIndex].style.transform =
-    "translateX(100%)";
-  document.querySelectorAll(".multiSelect")[menuIndex].style.clipPath =
-    "polygon(0 0, 0 0, 0 100%, 0% 100%)";
-  document.querySelectorAll(".multiSelect")[menuIndex - 1].style.transform =
-    "translateX(0)";
-  document.querySelectorAll(".multiSelect")[menuIndex - 1].style.clipPath =
-    "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
-}
-
