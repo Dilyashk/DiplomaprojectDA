@@ -81,6 +81,6 @@ const AuthComponent = () => {
 //       />
 //     </View>
 //   );
-// };
+ };
 
 export default AuthComponent;
