@@ -60,6 +60,11 @@ function resetAllMenus() {
         showcase.classList.toggle('active');
       })
 
+ menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+
 
 
 
