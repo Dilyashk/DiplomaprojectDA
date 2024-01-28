@@ -14,6 +14,10 @@ var p = new Person();
 function Person() {
   this.age = 0;
 
+  var p = new Person();
+function Person() {
+  this.age = 0;
+
   setInterval(() => {
     this.age++; // `this` указывает на объект Person
   }, 1000);
