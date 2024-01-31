@@ -25,10 +25,6 @@ const auth = getAuth(firebaseApp);
 
 const dan = getDan(firebaseApp);
 
-// Use AsyncStorage for persistence
-const auth = getAuth(firebaseApp);
-
-const dan = getDan(firebaseApp);
 
 
 export { auth };
