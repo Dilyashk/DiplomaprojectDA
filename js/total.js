@@ -34,3 +34,11 @@ Object.defineProperty(o, "b", {
     return this.a + 1;
   },
 });
+
+
+
+  const firstName = 'Joffrey';
+const greeting = 'Hello';
+
+console.log(greeting + ', ' + firstName + '!');
+// => Hello, Joffrey!
