@@ -60,3 +60,8 @@ myFloat;
 
 let myNumber = "74";
 myNumber = Number(myNumber) + 3;
+
+const browserType = "mozilla";
+browserType.length;
+
+browserType[browserType.length - 1];
