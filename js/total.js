@@ -56,3 +56,7 @@ const myInt = 5;
 const myFloat = 6.667;
 myInt;
 myFloat;
+
+
+let myNumber = "74";
+myNumber = Number(myNumber) + 3;
