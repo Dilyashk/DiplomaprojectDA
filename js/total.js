@@ -51,3 +51,8 @@ function updateName() {
   const name = prompt("Enter a new name");
   button.textContent = `Player 1: ${name}`;
 }
+
+const myInt = 5;
+const myFloat = 6.667;
+myInt;
+myFloat;
