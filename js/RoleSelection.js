@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
 });
 
 export default RoleSelection;
-export default RoleSelection;
+
