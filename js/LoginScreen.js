@@ -78,3 +78,6 @@ const validateEmail = (email) => {
 
 
 export default LoginScreen;
+
+export default LoginScreen;
+
