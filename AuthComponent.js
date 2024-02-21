@@ -25,6 +25,9 @@ const AuthComponent = () => {
 
         await updateProfile(userCredential.user, { displayName: email, role });
 
+        export default LoginScreen;
+
+
         const user = userCredential.user;
         console.log('User signed up:', user.uid);
       } catch (error) {
