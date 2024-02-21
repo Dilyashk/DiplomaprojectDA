@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-
+hjgh
 const styles = StyleSheet.create({
   container: {
     flex: 1,
