@@ -16,8 +16,6 @@ if (!firebaseConfig) {
   throw new Error('Firebase configuration is missing');
 }
 
-// Initialize Firebase app
-const firebaseApp = initializeApp(firebaseConfig);
 
 // Initialize Firebase app
 const firebaseApp = initializeApp(firebaseConfig);
