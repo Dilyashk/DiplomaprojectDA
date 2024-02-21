@@ -1,3 +1,4 @@
+
 function Person() {
   // В конструкторе Person() `this` указывает на себя.
   this.age = 0;
@@ -127,6 +128,15 @@ class Account{
     public Object getId() { return id; }
     public int getSum() { return sum; }
     public void setSum(int sum) { this.sum = sum; }
+}
+
+  const button = document.querySelector("button");
+
+button.addEventListener("click", updateName);
+
+function updateName() {
+  const name = prompt("Enter a new name");
+  button.textContent = `Player 1: ${name}`;
 }
 
   const button = document.querySelector("button");
