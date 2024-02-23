@@ -30,6 +30,14 @@ const LoginScreen = () => {
         return;
       }
 
+
+        const handleRegister = async () => {
+    try {
+      // Validate email format
+      if (!validateEmail(email)) {
+        console.error('Invalid email format');
+        return;
+      }
       await auth.createUserWithEmailAndPassword(email, password);
       console.log('Registration successful');
 
