@@ -26,6 +26,20 @@ const App = () => {
 };
 
 
+ return (
+    <NavigationContainer>
+      <View style={styles.container}>
+        {!selectedRole ? (
+          <RoleSelection onSelectRole={handleSelectRole} />
+        ) : (
+          <LoginScreen role={selectedRole} />
+        )}
+      </View>
+    </NavigationContainer>
+  );
+};
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
