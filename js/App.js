@@ -12,18 +12,6 @@ const App = () => {
     setSelectedRole(role);
   };
 
-  return (
-    <NavigationContainer>
-      <View style={styles.container}>
-        {!selectedRole ? (
-          <RoleSelection onSelectRole={handleSelectRole} />
-        ) : (
-          <LoginScreen role={selectedRole} />
-        )}
-      </View>
-    </NavigationContainer>
-  );
-};
 
 
  return (
