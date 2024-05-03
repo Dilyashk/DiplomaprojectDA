@@ -102,3 +102,20 @@ const getFileFormat = (filename) => {
       console.error('Error performing OCR:', error);
     }
   };
+return (
+    <View>
+      <Text>OCR Demo</Text>
+      <Button title="Choose Image" onPress={handleImageChange} />
+      {image && <Image source={{ uri: image }} style={{ width: 300, height: 300 }} />}
+      <Button title="Recognize Text" onPress={handleOCR} disabled={loading} />
+      {loading && <Text>Loading...</Text>}
+      <View>
+        <Text>Text:</Text>
+        <Text>{text}</Text>
+      </View>
+    </View>
+  );
+}
+
+export default OCRDemo;
+
