@@ -30,3 +30,22 @@ function OCRDemo() {
       }
     });
   };
+
+const getFileFormat = (filename) => {
+    const parts = filename.split('.');
+    const extension = parts[parts.length - 1].toLowerCase();
+
+    const formatMap = {
+      jpg: 'JPEG',
+      jpeg: 'JPEG',
+      png: 'PNG',
+      gif: 'GIF',
+      bmp: 'BMP',
+      svg: 'SVG',
+      pdf: 'PDF',
+      doc: 'DOC',
+      docx: 'DOCX',
+    };
+
+    return formatMap[extension] || '';
+  };
