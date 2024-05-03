@@ -43,6 +43,12 @@ const styles = StyleSheet.create({
 export default RoleSelection;
 
 
+module.exports = {
+  root: true,
+  extends: '@react-native',
+};
+
+
 
 
 
