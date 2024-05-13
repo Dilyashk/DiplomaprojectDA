@@ -1,0 +1,41 @@
+.icon {
+  height: 16px;
+  width: 16px;
+}
+
+.icon .vector-3 {
+  height: 10px;
+  left: 1px;
+  position: absolute;
+  top: 3px;
+  width: 15px;
+}
+
+.icon .icon-px-eye {
+  height: 16px !important;
+  position: unset !important;
+  width: unset !important;
+}
+
+.icon .icon-24px-eye {
+  height: 12px !important;
+  left: 1px !important;
+  top: 2px !important;
+  width: 14px !important;
+}
+
+.icon .icon-eye-instance {
+  height: 10px !important;
+  top: 1px !important;
+  width: 14px !important;
+}
+
+.icon .icon-px-eye-instance {
+  height: 12px !important;
+  left: 1px !important;
+  width: 12px !important;
+}
+
+.icon.open {
+  position: relative;
+}
