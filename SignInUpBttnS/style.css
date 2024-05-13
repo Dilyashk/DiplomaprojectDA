@@ -1,0 +1,58 @@
+.sign-in-up-bttn-s {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.sign-in-up-bttn-s .btn-language {
+  height: 61px;
+  margin-right: -11px;
+  position: relative;
+  width: 311px;
+}
+
+.sign-in-up-bttn-s .frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  position: relative;
+}
+
+.sign-in-up-bttn-s .don-t-have-an-accoun {
+  color: var(--text-main);
+  font-family: var(--caption-font-family);
+  font-size: var(--caption-font-size);
+  font-style: var(--caption-font-style);
+  font-weight: var(--caption-font-weight);
+  letter-spacing: var(--caption-letter-spacing);
+  line-height: var(--caption-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.sign-in-up-bttn-s .sign-up {
+  color: var(--text-main);
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16px;
+  margin-top: -1px;
+  position: relative;
+  text-decoration: underline;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.sign-in-up-bttn-s .btn-language-2 {
+  height: 61px;
+  margin-bottom: -11px;
+  margin-right: -11px;
+  position: relative;
+  width: 311px;
+}
