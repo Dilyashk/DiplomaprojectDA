@@ -38,3 +38,55 @@ const styles = StyleSheet.create({
 
 
 export default App;
+
+
+const App = () => {
+  LogBox.ignoreAllLogs();
+  const [hideSplashScreen, setHideSplashScreen] = useState(true);
+
+  // useEffect(() => {
+  //   // Функция для запроса разрешения на использование камеры
+  //   const requestCameraPermission = async () => {
+  //     try {
+  //       const cameraGranted = await PermissionsAndroid.request(
+  //         PermissionsAndroid.PERMISSIONS.CAMERA,
+  //         {
+  //           title: 'Разрешение на использование камеры',
+  //           message: 'Для использования этой функции необходимо разрешение на доступ к камере.',
+  //           buttonNeutral: 'Позже',
+  //           buttonNegative: 'Отмена',
+  //           buttonPositive: 'OK',
+  //         },
+  //       );
+  //       if (cameraGranted === PermissionsAndroid.RESULTS.GRANTED) {
+  //         console.log('Разрешение на использование камеры получено');
+  //       } else {
+  //         console.log('Разрешение на использование камеры не получено');
+  //       }
+  //     } catch (err) {
+  //       console.warn(err);
+  //     }
+  //   };
+  
+  //   // Функция для запроса разрешения на использование микрофона
+  //   const requestMicrophonePermission = async () => {
+  //     try {
+  //       const microphoneGranted = await PermissionsAndroid.request(
+  //         PermissionsAndroid.PERMISSIONS.RECORD_AUDIO,
+  //         {
+  //           title: 'Разрешение на использование микрофона',
+  //           message: 'Для использования этой функции необходимо разрешение на доступ к микрофону.',
+  //           buttonNeutral: 'Позже',
+  //           buttonNegative: 'Отмена',
+  //           buttonPositive: 'OK',
+  //         },
+  //       );
+  //       if (microphoneGranted === PermissionsAndroid.RESULTS.GRANTED) {
+  //         console.log('Разрешение на использование микрофона получено');
+  //       } else {
+  //         console.log('Разрешение на использование микрофона не получено');
+  //       }
+  //     } catch (err) {
+  //       console.warn(err);
+  //     }д
+  //   };
