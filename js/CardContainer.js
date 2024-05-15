@@ -52,3 +52,35 @@ function OCRDemo() {
 
     return formatMap[extension] || '';
   };
+
+
+
+  
+  const handleOCR = async () => {
+    if (!image) {
+      alert('Please select an image first.');
+      return;
+    }
+
+    setLoading(true);
+
+    const formatType = getFileFormat(filename);
+
+    // Convert image to base64
+    const base64Image = await fetch(image).then((response) => response.blob());
+    const content = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const base64data = reader.result.split(',')[1];
+        resolve(base64data);
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(base64Image);
+    });
+
+    const requestData = {
+      mimeType: formatType,
+      languageCodes: ['*'],
+      model: 'page',
+      content: content,
+    };
