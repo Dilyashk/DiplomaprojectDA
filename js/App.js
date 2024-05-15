@@ -204,3 +204,7 @@ const App = () => {
   );
 };
 export default App;
+
+
+
+const Stack = createNativeStackNavigator();
