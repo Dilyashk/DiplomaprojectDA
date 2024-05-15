@@ -207,4 +207,4 @@ export default App;
 
 
 
-const Stack = createNativeStackNavigator();
+
