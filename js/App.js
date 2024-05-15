@@ -134,62 +134,7 @@ const App = () => {
               component={Videocall}
               options={{ headerShown: true }}
             />
-            <Stack.Screen
-              name="Feedback"
-              component={Feedback}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="Feedback1"
-              component={Feedback1}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="Learn"
-              component={Learn}
-              options={{ headerShown: false }}
-            />
-            {/* <Stack.Screen
-              name="VideoCallApp"
-              component={VideoCallApp}
-              options={{ headerShown: false }}
-            /> */}
 
-            <Stack.Screen
-              name="RoomListPage"
-              component={RoomListPage}
-              options={{ headerShown: false }}
-            />
-
-            {/* <Stack.Screen
-              name="OCRdemo"
-              component={OCRDemo}
-              options={{ headerShown: false }}
-            /> */}
-
-            <Stack.Screen
-              name="UserChatScreen"
-              component={UserChatScreen}
-              options={{ headerShown: false }}
-            />
-
-            {/* <Stack.Screen
-              name="ChatListScreen"
-              component={ChatListScreen}
-              options={{ headerShown: false }}
-            /> */}
-
-            <Stack.Screen
-              name="ProfileChange"
-              component={ProfileChange}
-              options={{ headerShown: false }}
-            />
-
-            <Stack.Screen
-              name="VideoWebView"
-              component={VideoWebView}
-              options={{ headerShown: false }}
-            />
 
             <Stack.Screen
               name="ocr"
