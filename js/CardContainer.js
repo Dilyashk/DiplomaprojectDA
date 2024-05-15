@@ -84,3 +84,47 @@ function OCRDemo() {
       model: 'page',
       content: content,
     };
+
+
+    
+    console.log('Image data:', requestData);
+
+    try {
+      const response = await fetch('http://172.17.8.233:4000/recognizeText', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Api-Key AQVNzgAdMKmYms98OVk9SexUKLAc3aUXFLjUOKi3',
+          'x-data-logging-enabled': 'true',
+        },
+        body: JSON.stringify(requestData),
+      });
+
+      const data = await response.json();
+      setLoading(false);
+      console.log('Response data:', data);
+      const fullText = data?.result?.textAnnotation?.fullText;
+      setText(fullText || 'No text detected.');
+    } catch (error) {
+      setLoading(false);
+      console.error('Error performing OCR:', error);
+    }
+  };
+
+  return (
+    <View>
+      <Text>OCR Demo</Text>
+      <Button title="Choose Image" onPress={handleImageChange} />
+      {image && <Image source={{ uri: image }} style={{ width: 300, height: 300 }} />}
+      <Button title="Recognize Text" onPress={handleOCR} disabled={loading} />
+      {loading && <Text>Loading...</Text>}
+      <View>
+        <Text>Text:</Text>
+        <Text>{text}</Text>
+      </View>
+    </View>
+  );
+}
+
+export default OCRDemo;
+
