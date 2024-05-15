@@ -13,6 +13,13 @@ const App = () => {
   };
 
 
+  const handleImageChange = async () => {
+    const options = {
+      mediaType: 'photo',
+      maxWidth: 500,
+      maxHeight: 500,
+      quality: 0.8,
+    };
 
  return (
     <NavigationContainer>
