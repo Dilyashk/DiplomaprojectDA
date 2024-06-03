@@ -26,7 +26,7 @@ export const SignInUpBttnS = ({
           />
           <div className="frame">
             <div className="don-t-have-an-accoun">
-              {property1 === "one" && <>{text}</>}
+              {property1 === "oneу" && <>{text}</>}
 
               {property1 === "two" && <>Есептік жазбаңыз бар ма?</>}
             </div>
