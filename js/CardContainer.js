@@ -14,7 +14,7 @@ function OCRDemo() {
       mediaType: 'photo',
       maxWidth: 500,
       maxHeight: 500,
-      quality: 0.8,
+      quality: 0.6,
     };
 
 
