@@ -43,7 +43,7 @@ export const VolunteerSignUp = () => {
           <div className="frame-3">
             <div className="frame-3">
               <div className="frame-4">
-                <div className="text-wrapper-2">Аты-жөні</div>
+                <div className="text-wrapper-2">Атыы-жөні</div>
                 <div className="div-wrapper">
                   <div className="text-wrapper-3">Аты-жөні</div>
                 </div>
