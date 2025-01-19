@@ -23,3 +23,13 @@ export const Chevron = ({ className }) => {
     </svg>
   );
 };
+
+
+ <svg
+      className={`chevron ${className}`}
+      fill="none"
+      height="17"
+      viewBox="0 0 10 17"
+      width="10"
+      xmlns="http://www.w3.org/2000/svg"
+    >
